@@ -1,0 +1,152 @@
+/* Start Variables */
+:root {
+
+}
+/* End Variables */
+/* start fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Fasthand&family=Fredoka+One&family=Gloria+Hallelujah&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nabla&family=Oleo+Script:wght@400;700&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,800;1,900&family=Rubik+Burned&family=Tangerine:wght@400;700&display=swap');
+  /* font-family: 'Amiri Quran', serif;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Fasthand', cursive;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Nabla', cursive;
+  font-family: 'Oleo Script', cursive;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik Burned', cursive;
+  font-family: 'Tangerine', cursive; */
+/* end fonts  */
+
+/* Start Global Rules */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/* End Global Rules */
+
+header{
+  height: 70px;
+  background-color: #ffffff;
+  box-shadow: 3px 2px 11px 13px #51333330;
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+header .logo{
+  width: 70px;
+}
+header .container .navbar ul{
+  list-style: none;
+  
+}
+header .container .navbar ul li{
+  display: inline-block;
+  padding-right: 50px;
+}
+header .container .navbar ul li a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: .2s all ease-in;
+}
+header .container .navbar ul li a:hover{
+  border-bottom: 3px solid #152cff;
+
+}
+
+.image-slider{
+  min-height: calc(100vh - 70px);
+  position: relative;
+  background-image: url(../images/design1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+  background-position: center center;
+}
+
+.image-slider *{
+  /* box-sizing: border-box; */
+}
+.image-slider .caption{
+  position: absolute;
+  top: 36%;
+  left: 0;
+  width: 100%;
+  padding: 64px 16px 32px 16px;
+  text-align: center;
+}
+.image-slider .caption h1{
+  margin: 0;
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 30px;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 100;
+}
+.arrow-left , .arrow-right{
+background-color: #fff;
+position: absolute;
+top: 40%;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: 0.3s ;
+opacity: .8;
+}
+.arrow-left:hover , .arrow-right:hover{
+  background-color: #000;
+  color: #fff;
+  opacity: 1;
+}
+.arrow-left{
+  left: 16px;
+}
+.arrow-right{
+right: 16px;
+}
+.image-fade{
+animation: imgFade 2s ease-in-out;
+}
+@keyframes imgFade {
+  0%{
+    opacity: .7;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* start package  */
+.package{
+  min-height: 70vh;
+  background-color: #5105df;
+}
+.package *{
+  padding: 0;
+  margin: 0;
+}
+/* end package  */
+
+.sec2{
+  min-height: 70vh;
+  background-color: #df0584;
+}
