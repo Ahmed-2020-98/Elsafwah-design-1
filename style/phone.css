@@ -1,0 +1,57 @@
+header .container .navbar{
+    display: none;
+}
+/* about Us  */
+.aboutUs {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 70vh;
+    /* background-color: #266ef3; */
+  }
+  .aboutUs .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    
+  }
+  .aboutUs img {
+width: 100%;
+  }
+  .aboutUs .container div.text {
+    font-family: 'Raleway', sans-serif;
+    color: #093c86;
+    width: 100%;
+  }
+  .aboutUs .container div.text h1{
+    font-size: 55px;
+    font-weight: bold;
+  }
+  /* end about Us  */
+
+    /* start gallary  */
+    .gallary {
+      padding-top: 0;
+      /* background: #3314e4; */
+    
+      min-height: 100vh;
+    }
+    .gallary h1{
+      font-size: 35px;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      color: #093c86;
+      text-align: center;
+    }
+
+    .gallary  .v-stretch{
+      grid-row: span 1;
+    }
+    .gallary  .h-stretch{
+      grid-column: span 1;
+    }
+    .gallary .big-stretch{
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+  
+    /* End gallary  */

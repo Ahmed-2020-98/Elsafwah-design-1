@@ -1,27 +1,32 @@
 /* Start Variables */
 :root {
-
 }
 /* End Variables */
 /* start fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Fasthand&family=Fredoka+One&family=Gloria+Hallelujah&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nabla&family=Oleo+Script:wght@400;700&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,800;1,900&family=Rubik+Burned&family=Tangerine:wght@400;700&display=swap');
-  /* font-family: 'Amiri Quran', serif;
-  font-family: 'Anton', sans-serif;
-  font-family: 'Cairo', sans-serif;
-  font-family: 'Fasthand', cursive;
-  font-family: 'Fredoka One', cursive;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Nabla', cursive;
-  font-family: 'Oleo Script', cursive;
-  font-family: 'Poiret One', cursive;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Rubik Burned', cursive;
-  font-family: 'Tangerine', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Fasthand&family=Fredoka+One&family=Gloria+Hallelujah&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nabla&family=Oleo+Script:wght@400;700&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,800;1,900&family=Rubik+Burned&family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri+Quran&family=Anton&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Fasthand&family=Fredoka+One&family=Gloria+Hallelujah&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@800&family=Nabla&family=Oleo+Script:wght@400;700&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Burned&family=Tangerine:wght@400;700&display=swap");
+
+/* 
+  font-family: 'Almarai', sans-serif;
+font-family: 'Amiri Quran', serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Fasthand', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nabla', cursive;
+font-family: 'Oleo Script', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik Burned', cursive;
+font-family: 'Tangerine', cursive;
 /* end fonts  */
 
 /* Start Global Rules */
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -33,43 +38,39 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
 /* End Global Rules */
 
-header{
+header {
   height: 70px;
   background-color: #ffffff;
   box-shadow: 3px 2px 11px 13px #51333330;
 }
-header .container{
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-header .logo{
+header .logo {
   width: 70px;
 }
-header .container .navbar ul{
+header .container .navbar ul {
   list-style: none;
-  
 }
-header .container .navbar ul li{
+header .container .navbar ul li {
   display: inline-block;
   padding-right: 50px;
 }
-header .container .navbar ul li a{
+header .container .navbar ul li a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
-  transition: .2s all ease-in;
+  transition: 0.2s all ease-in;
 }
-header .container .navbar ul li a:hover{
+header .container .navbar ul li a:hover {
   border-bottom: 3px solid #152cff;
-
 }
 
-.image-slider{
+.image-slider {
   min-height: calc(100vh - 70px);
   position: relative;
   background-image: url(../images/design1.jpg);
@@ -79,10 +80,10 @@ header .container .navbar ul li a:hover{
   background-position: center center;
 }
 
-.image-slider *{
+.image-slider * {
   /* box-sizing: border-box; */
 }
-.image-slider .caption{
+.image-slider .caption {
   position: absolute;
   top: 36%;
   left: 0;
@@ -90,63 +91,135 @@ header .container .navbar ul li a:hover{
   padding: 64px 16px 32px 16px;
   text-align: center;
 }
-.image-slider .caption h1{
+.image-slider .caption h1 {
   margin: 0;
   color: #fff;
   font-size: 60px;
   letter-spacing: 30px;
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   font-weight: 100;
 }
-.arrow-left , .arrow-right{
-background-color: #fff;
-position: absolute;
-top: 40%;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-transition: 0.3s ;
-opacity: .8;
+.arrow-left,
+.arrow-right {
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.8;
 }
-.arrow-left:hover , .arrow-right:hover{
+.arrow-left:hover,
+.arrow-right:hover {
   background-color: #000;
   color: #fff;
   opacity: 1;
 }
-.arrow-left{
+.arrow-left {
   left: 16px;
 }
-.arrow-right{
-right: 16px;
+.arrow-right {
+  right: 16px;
 }
-.image-fade{
-animation: imgFade 2s ease-in-out;
+.image-fade {
+  animation: imgFade 2s ease-in-out;
 }
 @keyframes imgFade {
-  0%{
-    opacity: .7;
+  0% {
+    opacity: 0.7;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
+/* about Us  */
+.aboutUs {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  min-height: 70vh;
+  /* background-color: #266ef3; */
+}
+.aboutUs .container {
+  display: flex;
+}
+.aboutUs img {
+  width: 50%;
+}
+.aboutUs .container div.text {
+  width: 50%;
+  padding: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: #093c86;
+}
+.aboutUs .container div.text h1{
+  font-size: 55px;
+  font-weight: bold;
+}
+/* end about Us  */
+
+  /* start gallary  */
+  .gallary {
+    padding-top: 0;
+    /* background: #3314e4; */
+  
+    min-height: 100vh;
+  }
+  .gallary h1{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: #093c86;
+    text-align: center;
+  }
+  .gallary .allphots{
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    box-shadow: 1px 0px 18px 13px #c1bfbfa6;
+  }
+  .gallary  .v-stretch{
+    grid-row: span 2;
+  }
+  .gallary  .h-stretch{
+    grid-column: span 2;
+  }
+  .gallary .big-stretch{
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .gallary img{
+    width: 100%;
+    height: 100%;
+  }
+  /* End gallary  */
 
 /* start package  */
-.package{
+.package {
   min-height: 70vh;
-  background-color: #5105df;
+  /* background-color: #5105df; */
+  padding: 30px;
 }
-.package *{
+.package * {
   padding: 0;
   margin: 0;
 }
+.package {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* end package  */
 
-.sec2{
+.sec2 {
   min-height: 70vh;
   background-color: #df0584;
 }
+

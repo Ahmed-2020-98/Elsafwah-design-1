@@ -52,8 +52,3 @@ setInterval(() => {
       }
       slide(id);
     },3000)
-// function slide() {
-//   slider.style.backgroundImage = `url(../images/${images[id]})`;
-//   slider.style.backgroundImage = `url(../images/design2.jpg)`;
-
-//     }
