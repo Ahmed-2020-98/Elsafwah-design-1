@@ -1,0 +1,30 @@
+/* about Us  */
+.aboutUs {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 70vh;
+    /* background-color: #266ef3; */
+  }
+  .aboutUs .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    
+  }
+  .aboutUs img {
+width: 100%;
+  }
+  .aboutUs .container div.text {
+    font-family: 'Raleway', sans-serif;
+    color: #093c86;
+    width: 100%;
+  }
+  .aboutUs .container div.text h1{
+    font-size: 55px;
+    font-weight: bold;
+  }
+  /* end about Us  */
+
+  .gallary  .v-stretch-ipad{
+    grid-row: span 2;
+  }

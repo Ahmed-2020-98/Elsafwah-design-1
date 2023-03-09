@@ -165,6 +165,7 @@ header .container .navbar ul li a:hover {
   /* start gallary  */
   .gallary {
     padding-top: 0;
+    margin-bottom: 70px;
     /* background: #3314e4; */
   
     min-height: 100vh;
@@ -200,26 +201,34 @@ header .container .navbar ul li a:hover {
   }
   /* End gallary  */
 
-/* start package  */
-.package {
-  min-height: 70vh;
-  /* background-color: #5105df; */
-  padding: 30px;
+/* start Contact  */
+.contact{
+
+  color: #062240;
 }
-.package * {
-  padding: 0;
-  margin: 0;
+.contact  h1{
+font-family: 'Raleway', sans-serif;
+font-size: 40px;
+text-align: center;
+font-weight: 700;
 }
-.package {
+.contact .contactInfo{
+height: 400px;
+}
+.contact .contactInfo i{
+  font-size: 60px;
+}
+.contact .contactInfo div{
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-/* end package  */
-
-.sec2 {
-  min-height: 70vh;
-  background-color: #df0584;
+.contact .contactInfo div p{
+  padding-top: 40px;
+  text-align: center;
 }
+/* End Contact  */
 
