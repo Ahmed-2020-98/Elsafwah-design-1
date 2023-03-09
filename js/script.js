@@ -45,10 +45,10 @@ arrRight.addEventListener("click", () => {
   slide(id);
 });
 
-setInterval(() => {
-    id++;
-    if (id > images.length - 1) {
-        id = 0;
-      }
-      slide(id);
-    },3000)
+// setInterval(() => {
+//     id++;
+//     if (id > images.length - 1) {
+//         id = 0;
+//       }
+//       slide(id);
+//     },3000)
