@@ -22,33 +22,34 @@ function slide(id) {
   slider.classList.add("image-fade");
   setTimeout(() => {
     slider.classList.remove("image-fade");
-  }, 1000);
+  }, 3000);
 
   Heading.innerText = heading[id];
   description.innerText = descriptions[id];
 }
 
-arrLeft.addEventListener("click", () => {
-  id--;
-  if (id < 0) {
-    id = images.length - 1;
-  }
-  console.log(id);
-  slide(id);
-});
+// arrLeft.addEventListener("click", () => {
+//   console.log('ffa');
+//   id--;
+//   if (id < 0) {
+//     id = images.length - 1;
+//   }
+//   console.log(id);
+//   slide(id);
+// });
 
-arrRight.addEventListener("click", () => {
-  id++;
-  if (id > images.length - 1) {
-    id = 0;
-  }
-  slide(id);
-});
+// arrRight.addEventListener("click", () => {
+//   id++;
+//   if (id > images.length - 1) {
+//     id = 0;
+//   }
+//   slide(id);
+// });
 
-// setInterval(() => {
-//     id++;
-//     if (id > images.length - 1) {
-//         id = 0;
-//       }
-//       slide(id);
-//     },3000)
+setInterval(() => {
+    id++;
+    if (id > images.length - 1) {
+        id = 0;
+      }
+      slide(id);
+    },3000)
