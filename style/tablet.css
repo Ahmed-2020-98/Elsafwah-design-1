@@ -1,3 +1,13 @@
+
+/* Start Header  */
+header .navbar{
+    display: none;
+}
+header .icon{
+    display: block;
+}
+/* End Header  */
+
 /* about Us  */
 .aboutUs {
     padding-top: 0;
