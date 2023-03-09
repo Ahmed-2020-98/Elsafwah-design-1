@@ -1,6 +1,7 @@
 /* Start Variables */
 :root {
   --main-color:#062240;
+  --second-color:#92b2d3;
 }
 /* End Variables */
 /* start fonts  */
@@ -35,6 +36,16 @@ font-family: 'Tangerine', cursive;
 html {
   scroll-behavior: smooth;
 }
+html::-webkit-scrollbar {
+  width: 15px;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+html::-webkit-scrollbar-track {
+  background: var(--second-color);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -80,7 +91,7 @@ header .container .navbar ul li a:hover {
 .image-slider {
   min-height: calc(100vh - 70px);
   position: relative;
-  background-image: url(../images/design1.jpg);
+  background-image: url(../images/3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.3s;
@@ -192,7 +203,7 @@ header .container .navbar ul li a:hover {
     grid-auto-flow: dense;
     box-shadow: 1px 0px 18px 13px #c1bfbfa6;
   }
-  .gallary  .v-stretch{
+  .gallary .v-stretch{
     grid-row: span 2;
   }
   .gallary  .h-stretch{

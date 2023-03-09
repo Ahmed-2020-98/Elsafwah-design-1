@@ -4,12 +4,12 @@ const arrRight = document.querySelector(".arrow-right");
 const Heading = document.querySelector(".caption h1");
 const description = document.querySelector(".caption p");
 
-const images = ["design1.jpg", "design2.jpg", "design3.jpg"];
-const heading = ["Text one", "Text two", "Text three"];
+const images = ["1.jpg", "2.jpg", "3.jpg"];
+const heading = ["Welcome Message", "Second Message", "Another Message"];
 const descriptions = [
-  "description one",
-  "description two",
-  "description three",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimuspossimus voluptates",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimuspossimus voluptates? Quasi",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimuspossimus voluptates? Quasi",
 ];
 
 //slider ID
@@ -22,7 +22,7 @@ function slide(id) {
   slider.classList.add("image-fade");
   setTimeout(() => {
     slider.classList.remove("image-fade");
-  }, 3000);
+  }, 6000);
 
   Heading.innerText = heading[id];
   description.innerText = descriptions[id];
@@ -52,4 +52,4 @@ setInterval(() => {
         id = 0;
       }
       slide(id);
-    },3000)
+    },6000)
