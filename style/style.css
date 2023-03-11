@@ -134,6 +134,7 @@ header .container .navbar ul li a:hover::before  {
     width: 30px;
   }
 }
+
 /* End Header  */
 .image-slider {
   min-height: calc(100vh - 70px);
