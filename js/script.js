@@ -5,7 +5,7 @@ const Heading = document.querySelector(".caption h1");
 const description = document.querySelector(".caption p");
 const preloader=document.querySelector(".loader-container");
 
-const images = ["1.jpg", "2.jpg", "3.jpg"];
+const images = ["1.jpg", "2.jpg", "4.jpg"];
 const heading = ["Welcome Message", "Second Message", "Another Message"];
 const descriptions = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimuspossimus voluptates",
