@@ -3,6 +3,7 @@ const arrLeft = document.querySelector(".arrow-left");
 const arrRight = document.querySelector(".arrow-right");
 const Heading = document.querySelector(".caption h1");
 const description = document.querySelector(".caption p");
+const preloader=document.querySelector(".loader-container");
 
 const images = ["1.jpg", "2.jpg", "3.jpg"];
 const heading = ["Welcome Message", "Second Message", "Another Message"];
@@ -53,3 +54,15 @@ setInterval(() => {
       }
       slide(id);
     },6000)
+
+
+// Start preloader 
+function preloader1(){
+  preloader.classList.add('remove-loader')
+}
+
+function fadeInPreLoader(){
+  setTimeout(preloader1,2000)
+} 
+window.onload=fadeInPreLoader;
+// end preloader 

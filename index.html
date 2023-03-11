@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my title</title>
-    <link rel="shortcut icon" href="./images/loop3.png" type="image/x-icon" />
+    <title>El-Safwah Group</title>
+    <link rel="shortcut icon" href="./images/1.jpg" type="image/x-icon" />
     <!-- bootstap  -->
     <!-- <link rel="stylesheet" href="./style/bootstrap.min.css"> -->
     <link
@@ -42,9 +42,14 @@
     />
   </head>
   <body>
+    <!-- pre loader -->
+    <div class="loader-container">
+      <img draggable="false" src="./images/preloader.gif" alt="" />
+    </div>
+    <!-- Start navbar  -->
     <header>
       <div class="container">
-        <a href="#" >
+        <a href="#home">
           <!-- <img src="images/loop3.png" class="logo" alt="" /> -->
           <i class="fa-solid fa-house logo"></i>
         </a>
@@ -53,16 +58,17 @@
         </div>
         <div class="navbar">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Our Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#ourProject">Our Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </header>
+    <!-- End navbar  -->
     <!-- Start Heading Page background -->
-    <section class="image-slider">
+    <section class="image-slider" id="home">
       <div class="arrow-left">
         <i class="fas fa-arrow-left"></i>
       </div>
@@ -80,7 +86,7 @@
     <!-- end Heading Page background -->
 
     <!-- About us  -->
-    <div class="aboutUs">
+    <div class="aboutUs" id="aboutUs">
       <div class="container">
         <img src="images/4.jpg" class="wow slideInLeft" alt="" />
         <div class="text">
@@ -98,7 +104,7 @@
     <!-- End About us  -->
     <hr />
     <!-- start Gallary  -->
-    <div class="gallary">
+    <div class="gallary" id="ourProject">
       <div class="container">
         <h1 class="wow bounceInLeft">Our Projects</h1>
         <div class="allphots">
@@ -123,7 +129,7 @@
     <!-- End Gallary  -->
     <hr />
     <!-- Start Contact Us  -->
-    <div class="contact bg-light">
+    <div class="contact bg-light" id="contact">
       <div class="container">
         <h1>Contact Info</h1>
         <div class="contactInfo row">
@@ -168,6 +174,43 @@
       </div>
     </div>
     <!-- End Map   -->
+
+    <!-- Start footer  -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <h3>code opacity</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste
+            corrupti doloribus odio sed!
+          </p>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="footer-bottom">
+          <p>
+            copyright &copy;2023 El-Safwah Group. designed by
+            <span>El-Safwah</span>
+          </p>
+        </div>
+    </footer>
+    <!-- End footer  -->
 
     <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
     <script src="./js/script.js"></script>

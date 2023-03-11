@@ -2,6 +2,7 @@
 :root {
   --main-color:#062240;
   --second-color:#92b2d3;
+  --main-heading:'Raleway', sans-serif;
 }
 /* End Variables */
 /* start fonts  */
@@ -37,6 +38,7 @@ font-family: 'Tangerine', cursive;
   background: #2b3dda;
   color: #fff;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -56,10 +58,32 @@ body {
 
 /* End Global Rules */
 
+/* Start preloader  */
+.loader-container{
+  position: fixed;
+  z-index: 10000;
+  background: #E5EFF1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.loader-container.remove-loader{
+display: none;
+}
+/*End preloader  */
+
+/* Start Header  */
 header {
   height: 70px;
   background-color: #ffffff;
   box-shadow: 3px 2px 11px 13px #51333330;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header .container {
   display: flex;
@@ -110,7 +134,7 @@ header .container .navbar ul li a:hover::before  {
     width: 30px;
   }
 }
-
+/* End Header  */
 .image-slider {
   min-height: calc(100vh - 70px);
   position: relative;
@@ -287,4 +311,75 @@ iframe{
   width: 100%;
 }
 /* End map  */
+
+/* Start Footer  */
+
+footer{
+  background: url(../images/Footer3.png);
+  background-color: var(--main-color);
+  background-size: contain;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  font-family: var(--main-heading);
+  
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+/* End Footer  */
 
