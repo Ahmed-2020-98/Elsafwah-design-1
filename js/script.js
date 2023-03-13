@@ -7,7 +7,11 @@ const preloader = document.querySelector('.loader-container');
 const menuIcon = document.querySelector('header .icon');
 const navbar = document.querySelector('header .navbar');
 
-const images = ['design1.jpg', 'design2.jpg', 'design4.jpg'];
+const images = [
+  'https://picsum.photos/1080',
+  'https://picsum.photos/1080',
+  'https://picsum.photos/1080',
+];
 const heading = ['Welcome Message', 'Second Message', 'Another Message'];
 const descriptions = [
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimuspossimus voluptates',
@@ -20,7 +24,7 @@ let id = 0;
 
 // the slider Function
 function slide(id) {
-  slider.style.backgroundImage = `url(../images/${images[id]})`;
+  slider.style.backgroundImage = `url(${images[id]})`;
   slider.classList.add('image-fade');
   setTimeout(() => {
     slider.classList.remove('image-fade');
