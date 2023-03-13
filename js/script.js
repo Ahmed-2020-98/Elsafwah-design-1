@@ -9,8 +9,8 @@ const navbar = document.querySelector('header .navbar');
 
 const images = [
   'https://picsum.photos/1080',
-  'https://picsum.photos/1080',
-  'https://picsum.photos/1080',
+  'https://picsum.photos/1090',
+  'https://picsum.photos/1095',
 ];
 const heading = ['Welcome Message', 'Second Message', 'Another Message'];
 const descriptions = [
