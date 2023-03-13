@@ -8,9 +8,10 @@ const menuIcon = document.querySelector('header .icon');
 const navbar = document.querySelector('header .navbar');
 
 const images = [
-  'https://picsum.photos/1080',
-  'https://picsum.photos/1090',
-  'https://picsum.photos/1095',
+  'https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1213&q=80',
+  'https://images.unsplash.com/photo-1494203484021-3c454daf695d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+  'https://images.unsplash.com/photo-1558882224-dda166733046?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
+
 ];
 const heading = ['Welcome Message', 'Second Message', 'Another Message'];
 const descriptions = [
