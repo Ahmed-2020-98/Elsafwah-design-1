@@ -7,7 +7,7 @@ const preloader = document.querySelector('.loader-container');
 const menuIcon = document.querySelector('header .icon');
 const navbar = document.querySelector('header .navbar');
 
-const images = ['1.jpg', '2.jpg', '4.jpg'];
+const images = ['design1.jpg', 'design2.jpg', 'design4.jpg'];
 const heading = ['Welcome Message', 'Second Message', 'Another Message'];
 const descriptions = [
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimuspossimus voluptates',
