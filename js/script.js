@@ -121,10 +121,10 @@ allBtn.addEventListener("click", (btn) => {
     // add a bg to selected btn
     btn.target.classList.add("active");
     // show imgs
-    graphicSec.style.display = "block";
-    webSec.style.display = "block";
-    vectorSec.style.display = "block";
-    vectorSec1.style.display = "block";
+    graphicSec.style.display = "none";
+    webSec.style.display = "none";
+    vectorSec.style.display = "none";
+    vectorSec1.style.display = "none";
 });
 // vector function
 vectorBtn.addEventListener("click", (btn) => {

@@ -120,7 +120,7 @@ header .container {
   align-items: center;
 }
 header .logo {
-  width: 210px;
+  width: 120px;
   font-size: 20px;
   color: var(--main-color);
 }
@@ -191,7 +191,6 @@ header .container .navbar ul li a:hover::before  {
   margin: 0;
   color: #fff;
   font-size: 60px;
-  letter-spacing: 30px;
   font-family: "Fredoka One", cursive;
   font-weight: 100;
 }
