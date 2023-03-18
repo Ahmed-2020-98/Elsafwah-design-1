@@ -6,6 +6,8 @@ const description = document.querySelector('.caption p');
 const preloader = document.querySelector('.loader-container');
 const menuIcon = document.querySelector('header .icon');
 const navbar = document.querySelector('header .navbar');
+const bars = document.querySelector('header .icon .icons');
+const xmark = document.querySelector('header .icon .xmark');
 
 const images = [
   'https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1213&q=80',
@@ -61,14 +63,14 @@ setInterval(() => {
 }, 6000);
 
 // Start preloader
-function preloader1() {
-  preloader.classList.add('remove-loader');
-}
+// function preloader1() {
+//   preloader.classList.add('remove-loader');
+// }
 
-function fadeInPreLoader() {
-  setTimeout(preloader1, 2000);
-}
-window.onload = fadeInPreLoader;
+// function fadeInPreLoader() {
+//   setTimeout(preloader1, 2000);
+// }
+// window.onload = fadeInPreLoader;
 // end preloader
 
 //menu
@@ -78,6 +80,7 @@ menuIcon.addEventListener('click', () => {
   console.log(isMenu);
   if (isMenu) {
     navbar.classList.toggle('toggle-navbar');
+    bars.classList.toggle('xmark');
   }
 });
 

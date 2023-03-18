@@ -126,6 +126,7 @@ header .logo {
 }
 header .icon{
   display: none;
+  color: #fff;
 }
 header .icon i{
   font-size: 35px;

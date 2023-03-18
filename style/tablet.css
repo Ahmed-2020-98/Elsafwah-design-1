@@ -6,6 +6,47 @@ header .icon {
   display: block;
   cursor: pointer;
 }
+header .icon .icons{
+  width: 45px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+header .icon .icons span{
+  width: 100%;
+  height: 4px;
+  display: inline-block;
+  background-color: #fff;
+  transition:  0.3s all ease-in-out;
+
+}
+header .icon .xmark{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .icon .xmark span:nth-child(1){
+  transform: rotate(45deg);
+}
+header .icon .xmark span:nth-child(2){
+display: none;
+}
+header .icon .xmark span:nth-child(3){
+  transform: rotate(135deg);
+}
+header .icon .fa-bars{
+  
+}
+header .icon .fa-xmark{
+display: none;
+}
+header .container {
+  flex-direction: row;
+  justify-content: space-between;
+}
 /* End Header  */
 /* start navbar  */
 header .toggle-navbar {
@@ -14,7 +55,7 @@ header .toggle-navbar {
   top: 70px;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 265px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,12 +67,12 @@ header .toggle-navbar {
     height: 0;
   }
   100% {
-    height: 600px;
+    height: 265px;
   }
 }
 header .navbar ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   flex-wrap: wrap;
   height: 100%;
   justify-content: space-around;
@@ -40,9 +81,22 @@ header .navbar li {
 }
 header .navbar ul a {
   color: #fff !important;
-  font-size: 30px !important;
+  font-size: 20px !important;
+}
+header .container .navbar ul li a:hover::before {
+  width: 0;
+  animation: links 0s ease-in-out;
 }
 /* end navbar  */
+/* whats app  */
+.whatsapp{
+  bottom: 40px;
+  left: 28px;
+}
+.whatsapp a img {
+  width: 60px;
+}
+/* end whatsapp  */
 /* about Us  */
 .aboutUs {
   padding-top: 0;
