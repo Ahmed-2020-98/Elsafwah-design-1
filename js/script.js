@@ -10,16 +10,16 @@ const bars = document.querySelector('header .icon .icons');
 const xmark = document.querySelector('header .icon .xmark');
 
 const images = [
-  'https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1213&q=80',
-  'https://images.unsplash.com/photo-1494203484021-3c454daf695d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-  'https://images.unsplash.com/photo-1558882224-dda166733046?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
+  '../images/heading/2.jpg',
+  '../images/heading/3.jpg',
+  '../images/heading/4.jpg',
 
 ];
 const heading = ['نحن نقدم لك ما تستحق', 'عيش الرفاهية الفندقية', 'تصميمات تجعل عيناك تتألق'];
 const descriptions = [
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimuspossimus voluptates',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimuspossimus voluptates? Quasi',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimuspossimus voluptates? Quasi',
+  '',
+  '',
+  '',
 ];
 
 //slider ID

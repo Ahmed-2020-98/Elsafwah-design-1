@@ -182,7 +182,7 @@ header .container .navbar ul li a:hover::before  {
 }
 .image-slider .caption {
   position: absolute;
-  top: 36%;
+  top: 20%;
   left: 0;
   width: 100%;
   padding: 64px 16px 32px 16px;
@@ -190,10 +190,11 @@ header .container .navbar ul li a:hover::before  {
 }
 .image-slider .caption h1 {
   margin: 0;
-  color: #fff;
-  font-size: 60px;
-  font-family: "Fredoka One", cursive;
-  font-weight: 100;
+  color: #ffffff;
+  font-size: 170px;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-weight: 900;
+  text-shadow: 9px 11px 10px #062240;
 }
 .arrow-left,
 .arrow-right {
@@ -407,8 +408,8 @@ header .container .navbar ul li a:hover::before  {
 
 #portflio .container #allWork .row .box {
   background-image: linear-gradient( 45deg, var(--grad-clr-left), var(--dark-bg));
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  min-height: 400px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
@@ -418,6 +419,7 @@ header .container .navbar ul li a:hover::before  {
 
 #portflio .container #allWork .row .box .image {
   width: 100%;
+  height: 100%;
   transition: 0.3s;
   position: absolute;
   top: 0;
@@ -719,3 +721,6 @@ footer{
 }
 /* End Footer  */
 
+
+
+/* test  */
