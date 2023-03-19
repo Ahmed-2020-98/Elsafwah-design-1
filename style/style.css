@@ -457,7 +457,7 @@ header .container .navbar ul li a:hover::before  {
   font-weight: 600;
   font-size: 0.9rem;
   transition: 0.3s;
-  /* display: none; */
+  display: none;
 }
 
 #portflio .container #allWork .row .box .link {
