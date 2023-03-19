@@ -97,6 +97,18 @@ header .container .navbar ul li a:hover::before {
   width: 60px;
 }
 /* end whatsapp  */
+.image-slider .caption {
+  top: 10%;
+  width: 100%;
+}
+.image-slider .caption h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 130px;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-weight: 900;
+  text-shadow: 9px 11px 10px #062240;
+}
 /* about Us  */
 .aboutUs {
   padding-top: 0;

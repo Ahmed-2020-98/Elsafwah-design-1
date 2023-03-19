@@ -174,6 +174,8 @@ graphicBtn.addEventListener("click", (btn) => {
     graphicSec.style.display = "block";
     webSec.style.display = "none";
     vectorSec.style.display = "none";
+    vectorSec1.style.display = "none";
+
 
 });
 // web function
