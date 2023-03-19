@@ -318,13 +318,15 @@ header .container .navbar ul li a:hover::before  {
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-color: #0622404a;
+  /* background-color: #0622404a; */
 }
 #portflio .container h1{
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
   text-align: center;
   font-weight: 700;
+  margin: 0;
+  color: var(--main-color)
 }
 #portflio .container .top {
   display: flex;
@@ -333,6 +335,7 @@ header .container .navbar ul li a:hover::before  {
   width: 100%;
   font-family: 'Alexandria', sans-serif;
   font-weight: 900;
+  background-color: #fff;
 }
 
 #portflio .container .top .right {
@@ -351,6 +354,9 @@ header .container .navbar ul li a:hover::before  {
   cursor: pointer;
   text-decoration: none;
   color: var(--main-color);
+  border: 3px solid #06224081;
+  min-width: 170px;
+  margin: 10px 6px;
 }
 
 

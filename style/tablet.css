@@ -126,7 +126,6 @@ header .container .navbar ul li a:hover::before {
 }
 .aboutUs .container div.text {
   font-family: 'Raleway', sans-serif;
-  color: #093c86;
   width: 100%;
 }
 .aboutUs .container div.text h1 {
@@ -137,4 +136,10 @@ header .container .navbar ul li a:hover::before {
 
 .gallary .v-stretch-ipad {
   grid-row: span 2;
+}
+
+#portflio .container .top .right {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
