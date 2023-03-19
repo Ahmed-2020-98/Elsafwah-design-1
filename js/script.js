@@ -10,7 +10,7 @@ const bars = document.querySelector('header .icon .icons');
 const xmark = document.querySelector('header .icon .xmark');
 
 const images = [
-  '../images/heading/2.jpg',
+  '../images/heading/1.jpg',
   '../images/heading/3.jpg',
   '../images/heading/4.jpg',
 
