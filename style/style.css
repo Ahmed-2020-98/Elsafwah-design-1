@@ -318,6 +318,7 @@ header .container .navbar ul li a:hover::before  {
   justify-content: start;
   align-items: center;
   flex-direction: column;
+  background-color: #0622404a;
 }
 #portflio .container h1{
   font-family: 'Raleway', sans-serif;

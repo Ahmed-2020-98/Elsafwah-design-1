@@ -102,6 +102,7 @@ menuIcon.addEventListener('click', () => {
 
 // =====================  PORTFLIO  =====================
 let allBtn = document.getElementById("all");
+let inter = document.getElementById("interior1");
 let webBtn = document.getElementById("web");
 let graphicBtn = document.getElementById("graphic");
 let vectorBtn = document.getElementById("vector");
@@ -113,11 +114,28 @@ let interior = document.getElementById("interior");
 let vectorSec = document.getElementById("VecSec");
 let vectorSec1 = document.getElementById("VecSec1");
 let webSec = document.getElementById("WebSec");
-let allSec = webSec.innerHTML + graphicSec.innerHTML + vectorSec.innerHTML + vectorSec1.innerHTML ;
+let allSec = interior.innerHTML + webSec.innerHTML + graphicSec.innerHTML + vectorSec.innerHTML + vectorSec1.innerHTML ;
 
 // all function
 allBtn.addEventListener("click", (btn) => {
     //remove bg from all btns
+    inter.classList.remove("active");
+    webBtn.classList.remove("active");
+    graphicBtn.classList.remove("active");
+    vectorBtn.classList.remove("active");
+    vectorBtn1.classList.remove("active");
+    // add a bg to selected btn
+    btn.target.classList.add("active");
+    // show imgs
+    graphicSec.style.display = "block";
+    webSec.style.display = "block";
+    vectorSec.style.display = "block";
+    vectorSec1.style.display = "block";
+    interior.style.display = "block";
+});
+inter.addEventListener("click", (btn) => {
+    //remove bg from all btns
+    allBtn.classList.remove("active");
     webBtn.classList.remove("active");
     graphicBtn.classList.remove("active");
     vectorBtn.classList.remove("active");
@@ -135,6 +153,7 @@ allBtn.addEventListener("click", (btn) => {
 vectorBtn.addEventListener("click", (btn) => {
     //remove bg from all btns
     allBtn.classList.remove("active");
+    inter.classList.remove("active");
     webBtn.classList.remove("active");
     graphicBtn.classList.remove("active");
     vectorBtn1.classList.remove("active");
@@ -153,6 +172,7 @@ vectorBtn.addEventListener("click", (btn) => {
 vectorBtn1.addEventListener("click", (btn) => {
     //remove bg from all btns
     allBtn.classList.remove("active");
+    inter.classList.remove("active");
     webBtn.classList.remove("active");
     vectorBtn.classList.remove("active");
     graphicBtn.classList.remove("active");
@@ -171,9 +191,11 @@ vectorBtn1.addEventListener("click", (btn) => {
 graphicBtn.addEventListener("click", (btn) => {
     //remove bg from all btns
     allBtn.classList.remove("active");
+    inter.classList.remove("active");
     webBtn.classList.remove("active");
     vectorBtn.classList.remove("active");
     vectorBtn1.classList.remove("active");
+    
     // add a bg to selected btn
     btn.target.classList.add("active");
     // show imgs
@@ -190,6 +212,7 @@ graphicBtn.addEventListener("click", (btn) => {
 webBtn.addEventListener("click", (btn) => {
     //remove bg from all btns
     allBtn.classList.remove("active");
+    inter.classList.remove("active");
     graphicBtn.classList.remove("active");
     vectorBtn.classList.remove("active");
     vectorBtn1.classList.remove("active");
