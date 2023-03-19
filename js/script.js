@@ -109,6 +109,7 @@ let vectorBtn1 = document.getElementById("vector1");
 let allBtns = Array.from(document.querySelectorAll(".top .right a"));
 
 let graphicSec = document.getElementById("DesSec");
+let interior = document.getElementById("interior");
 let vectorSec = document.getElementById("VecSec");
 let vectorSec1 = document.getElementById("VecSec1");
 let webSec = document.getElementById("WebSec");
@@ -128,6 +129,7 @@ allBtn.addEventListener("click", (btn) => {
     webSec.style.display = "none";
     vectorSec.style.display = "none";
     vectorSec1.style.display = "none";
+    interior.style.display = "block";
 });
 // vector function
 vectorBtn.addEventListener("click", (btn) => {
@@ -136,6 +138,7 @@ vectorBtn.addEventListener("click", (btn) => {
     webBtn.classList.remove("active");
     graphicBtn.classList.remove("active");
     vectorBtn1.classList.remove("active");
+
     // add a bg to selected btn
     btn.target.classList.add("active");
     // show imgs
@@ -143,6 +146,7 @@ vectorBtn.addEventListener("click", (btn) => {
     webSec.style.display = "none";
     vectorSec.style.display = "block";
     vectorSec1.style.display = "none";
+    interior.style.display = "none";
 
 });
 // vector1 function
@@ -159,6 +163,8 @@ vectorBtn1.addEventListener("click", (btn) => {
     webSec.style.display = "none";
     vectorSec1.style.display = "block";
     vectorSec.style.display = "none";
+    interior.style.display = "none";
+
 
 });
 // graphic function
@@ -175,6 +181,8 @@ graphicBtn.addEventListener("click", (btn) => {
     webSec.style.display = "none";
     vectorSec.style.display = "none";
     vectorSec1.style.display = "none";
+    interior.style.display = "none";
+
 
 
 });
@@ -191,6 +199,8 @@ webBtn.addEventListener("click", (btn) => {
     graphicSec.style.display = "none";
     webSec.style.display = "block";
     vectorSec.style.display = "none";
+    interior.style.display = "none";
+
 
 });
 
