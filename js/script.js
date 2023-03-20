@@ -33,6 +33,8 @@ function slide(id) {
     slider.classList.remove('image-fade');
   }, 6000);
 
+
+
   Heading.innerText = heading[id];
   description.innerText = descriptions[id];
 }
