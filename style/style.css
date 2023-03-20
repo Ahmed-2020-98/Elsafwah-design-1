@@ -183,7 +183,7 @@ header .container .navbar ul li a:hover::before  {
 }
 .image-slider .caption {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 0;
   width: 100%;
   padding: 64px 16px 32px 16px;
@@ -192,7 +192,7 @@ header .container .navbar ul li a:hover::before  {
 .image-slider .caption h1 {
   margin: 0;
   color: #ffffff;
-  font-size: 170px;
+  font-size: 140px;
   font-family: 'Noto Kufi Arabic', sans-serif;
   font-weight: 900;
   text-shadow: 9px 11px 10px #062240;
@@ -238,7 +238,7 @@ header .container .navbar ul li a:hover::before  {
 }
 /* about Us  */
 .aboutUs {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
   min-height: 70vh;
   /* background-color: #266ef3; */
@@ -309,7 +309,8 @@ header .container .navbar ul li a:hover::before  {
 #portflio {
   background-color: var(--main-color-heading);
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  /* max-height: 1300px; */
 }
 
 #portflio .container {
@@ -325,7 +326,6 @@ header .container .navbar ul li a:hover::before  {
   font-size: 40px;
   text-align: center;
   font-weight: 700;
-  margin: 0;
   color: var(--main-color)
 }
 #portflio .container .top {
@@ -357,6 +357,7 @@ header .container .navbar ul li a:hover::before  {
   border: 3px solid #06224081;
   min-width: 170px;
   margin: 10px 6px;
+  text-align: center;
 }
 
 
@@ -405,6 +406,7 @@ header .container .navbar ul li a:hover::before  {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  max-height: 1200px;
 }
 
 #portflio .container #allWork .row {
@@ -623,6 +625,10 @@ font-weight: 700;
 .contact .contactInfo{
 min-height: 400px;
 }
+.contact .contactInfo .contactPadding{
+  height: 200px;
+
+}
 .contact .contactInfo i{
   font-size: 60px;
 }
@@ -631,7 +637,7 @@ min-height: 400px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .contact .contactInfo div p{

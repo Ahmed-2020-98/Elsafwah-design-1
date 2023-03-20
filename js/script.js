@@ -114,7 +114,7 @@ let interior = document.getElementById("interior");
 let vectorSec = document.getElementById("VecSec");
 let vectorSec1 = document.getElementById("VecSec1");
 let webSec = document.getElementById("WebSec");
-let allSec = interior.innerHTML + webSec.innerHTML + graphicSec.innerHTML + vectorSec.innerHTML + vectorSec1.innerHTML ;
+// let allSec = interior.innerHTML + webSec.innerHTML + graphicSec.innerHTML + vectorSec.innerHTML + vectorSec1.innerHTML ;
 
 // all function
 allBtn.addEventListener("click", (btn) => {
@@ -127,11 +127,11 @@ allBtn.addEventListener("click", (btn) => {
     // add a bg to selected btn
     btn.target.classList.add("active");
     // show imgs
-    graphicSec.style.display = "block";
-    webSec.style.display = "block";
-    vectorSec.style.display = "block";
+    graphicSec.style.display = "none";
+    webSec.style.display = "none";
+    vectorSec.style.display = "none";
     vectorSec1.style.display = "block";
-    interior.style.display = "block";
+    interior.style.display = "none";
 });
 inter.addEventListener("click", (btn) => {
     //remove bg from all btns

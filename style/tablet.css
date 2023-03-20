@@ -104,7 +104,7 @@ header .container .navbar ul li a:hover::before {
 .image-slider .caption h1 {
   margin: 0;
   color: #ffffff;
-  font-size: 130px;
+  font-size: 50px;
   font-family: 'Noto Kufi Arabic', sans-serif;
   font-weight: 900;
   text-shadow: 9px 11px 10px #062240;
