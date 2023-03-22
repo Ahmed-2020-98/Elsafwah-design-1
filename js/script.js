@@ -13,13 +13,12 @@ const images = [
   'https://socialbuildingz.com/sites/default/files/styles/new_slideshow_style/public/stories/WhatsApp%20Image%202019-07-14%20at%2010.20.48%20PM%20%281%29.jpeg?itok=bCVZLG0r',
   '../images/heading/200.jpg',
   '../images/heading/5.jpg',
-
 ];
-const heading = ['نحن نقدم لك ما تستحق', 'عيش الرفاهية الفندقية', 'تصميمات تجعل عيناك تتألق'];
+const heading = ['خدمات التصميم', ' خدمات التنفيذ ', ' خدمات الإشراف '];
 const descriptions = [
-  '',
-  '',
-  '',
+  '  تصميمات تجعل عيناك تتألق  ',
+  '    فريق من أمهر العمال والمشرفين علي قدر عالي من الاحترافية   ',
+  '   خدمات الاشراف الهندسي المتكامل  ',
 ];
 
 //slider ID
@@ -32,8 +31,6 @@ function slide(id) {
   setTimeout(() => {
     slider.classList.remove('image-fade');
   }, 6000);
-
-
 
   Heading.innerText = heading[id];
   description.innerText = descriptions[id];
@@ -48,7 +45,7 @@ arrLeft.addEventListener('click', () => {
   slide(id);
 });
 
-arrRight.addEventListener("click", () => {
+arrRight.addEventListener('click', () => {
   id++;
   if (id > images.length - 1) {
     id = 0;
@@ -86,157 +83,130 @@ menuIcon.addEventListener('click', () => {
   }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // =====================  PORTFLIO  =====================
-let allBtn = document.getElementById("all");
-let inter = document.getElementById("interior1");
-let webBtn = document.getElementById("web");
-let graphicBtn = document.getElementById("graphic");
-let vectorBtn = document.getElementById("vector");
-let vectorBtn1 = document.getElementById("vector1");
-let allBtns = Array.from(document.querySelectorAll(".top .right a"));
+let allBtn = document.getElementById('all');
+let inter = document.getElementById('interior1');
+let webBtn = document.getElementById('web');
+let graphicBtn = document.getElementById('graphic');
+let vectorBtn = document.getElementById('vector');
+let vectorBtn1 = document.getElementById('vector1');
+let allBtns = Array.from(document.querySelectorAll('.top .right a'));
 
-let graphicSec = document.getElementById("DesSec");
-let interior = document.getElementById("interior");
-let vectorSec = document.getElementById("VecSec");
-let vectorSec1 = document.getElementById("VecSec1");
-let webSec = document.getElementById("WebSec");
+let graphicSec = document.getElementById('DesSec');
+let interior = document.getElementById('interior');
+let vectorSec = document.getElementById('VecSec');
+let vectorSec1 = document.getElementById('VecSec1');
+let webSec = document.getElementById('WebSec');
 // let allSec = interior.innerHTML + webSec.innerHTML + graphicSec.innerHTML + vectorSec.innerHTML + vectorSec1.innerHTML ;
 
 // all function
-allBtn.addEventListener("click", (btn) => {
-    //remove bg from all btns
-    inter.classList.remove("active");
-    webBtn.classList.remove("active");
-    graphicBtn.classList.remove("active");
-    vectorBtn.classList.remove("active");
-    vectorBtn1.classList.remove("active");
-    // add a bg to selected btn
-    btn.target.classList.add("active");
-    // show imgs
-    graphicSec.style.display = "none";
-    webSec.style.display = "none";
-    vectorSec.style.display = "none";
-    vectorSec1.style.display = "block";
-    interior.style.display = "none";
+allBtn.addEventListener('click', (btn) => {
+  //remove bg from all btns
+  inter.classList.remove('active');
+  webBtn.classList.remove('active');
+  graphicBtn.classList.remove('active');
+  vectorBtn.classList.remove('active');
+  vectorBtn1.classList.remove('active');
+  // add a bg to selected btn
+  btn.target.classList.add('active');
+  // show imgs
+  graphicSec.style.display = 'none';
+  webSec.style.display = 'none';
+  vectorSec.style.display = 'none';
+  vectorSec1.style.display = 'block';
+  interior.style.display = 'none';
 });
-inter.addEventListener("click", (btn) => {
-    //remove bg from all btns
-    allBtn.classList.remove("active");
-    webBtn.classList.remove("active");
-    graphicBtn.classList.remove("active");
-    vectorBtn.classList.remove("active");
-    vectorBtn1.classList.remove("active");
-    // add a bg to selected btn
-    btn.target.classList.add("active");
-    // show imgs
-    graphicSec.style.display = "none";
-    webSec.style.display = "none";
-    vectorSec.style.display = "none";
-    vectorSec1.style.display = "none";
-    interior.style.display = "block";
+inter.addEventListener('click', (btn) => {
+  //remove bg from all btns
+  allBtn.classList.remove('active');
+  webBtn.classList.remove('active');
+  graphicBtn.classList.remove('active');
+  vectorBtn.classList.remove('active');
+  vectorBtn1.classList.remove('active');
+  // add a bg to selected btn
+  btn.target.classList.add('active');
+  // show imgs
+  graphicSec.style.display = 'none';
+  webSec.style.display = 'none';
+  vectorSec.style.display = 'none';
+  vectorSec1.style.display = 'none';
+  interior.style.display = 'block';
 });
 // vector function
-vectorBtn.addEventListener("click", (btn) => {
-    //remove bg from all btns
-    allBtn.classList.remove("active");
-    inter.classList.remove("active");
-    webBtn.classList.remove("active");
-    graphicBtn.classList.remove("active");
-    vectorBtn1.classList.remove("active");
+vectorBtn.addEventListener('click', (btn) => {
+  //remove bg from all btns
+  allBtn.classList.remove('active');
+  inter.classList.remove('active');
+  webBtn.classList.remove('active');
+  graphicBtn.classList.remove('active');
+  vectorBtn1.classList.remove('active');
 
-    // add a bg to selected btn
-    btn.target.classList.add("active");
-    // show imgs
-    graphicSec.style.display = "none";
-    webSec.style.display = "none";
-    vectorSec.style.display = "block";
-    vectorSec1.style.display = "none";
-    interior.style.display = "none";
-
+  // add a bg to selected btn
+  btn.target.classList.add('active');
+  // show imgs
+  graphicSec.style.display = 'none';
+  webSec.style.display = 'none';
+  vectorSec.style.display = 'block';
+  vectorSec1.style.display = 'none';
+  interior.style.display = 'none';
 });
 // vector1 function
-vectorBtn1.addEventListener("click", (btn) => {
-    //remove bg from all btns
-    allBtn.classList.remove("active");
-    inter.classList.remove("active");
-    webBtn.classList.remove("active");
-    vectorBtn.classList.remove("active");
-    graphicBtn.classList.remove("active");
-    // add a bg to selected btn
-    btn.target.classList.add("active");
-    // show imgs
-    graphicSec.style.display = "none";
-    webSec.style.display = "none";
-    vectorSec1.style.display = "block";
-    vectorSec.style.display = "none";
-    interior.style.display = "none";
-
-
+vectorBtn1.addEventListener('click', (btn) => {
+  //remove bg from all btns
+  allBtn.classList.remove('active');
+  inter.classList.remove('active');
+  webBtn.classList.remove('active');
+  vectorBtn.classList.remove('active');
+  graphicBtn.classList.remove('active');
+  // add a bg to selected btn
+  btn.target.classList.add('active');
+  // show imgs
+  graphicSec.style.display = 'none';
+  webSec.style.display = 'none';
+  vectorSec1.style.display = 'block';
+  vectorSec.style.display = 'none';
+  interior.style.display = 'none';
 });
 // graphic function
-graphicBtn.addEventListener("click", (btn) => {
-    //remove bg from all btns
-    allBtn.classList.remove("active");
-    inter.classList.remove("active");
-    webBtn.classList.remove("active");
-    vectorBtn.classList.remove("active");
-    vectorBtn1.classList.remove("active");
-    
-    // add a bg to selected btn
-    btn.target.classList.add("active");
-    // show imgs
-    graphicSec.style.display = "block";
-    webSec.style.display = "none";
-    vectorSec.style.display = "none";
-    vectorSec1.style.display = "none";
-    interior.style.display = "none";
+graphicBtn.addEventListener('click', (btn) => {
+  //remove bg from all btns
+  allBtn.classList.remove('active');
+  inter.classList.remove('active');
+  webBtn.classList.remove('active');
+  vectorBtn.classList.remove('active');
+  vectorBtn1.classList.remove('active');
 
-
-
+  // add a bg to selected btn
+  btn.target.classList.add('active');
+  // show imgs
+  graphicSec.style.display = 'block';
+  webSec.style.display = 'none';
+  vectorSec.style.display = 'none';
+  vectorSec1.style.display = 'none';
+  interior.style.display = 'none';
 });
 // web function
-webBtn.addEventListener("click", (btn) => {
-    //remove bg from all btns
-    allBtn.classList.remove("active");
-    inter.classList.remove("active");
-    graphicBtn.classList.remove("active");
-    vectorBtn.classList.remove("active");
-    vectorBtn1.classList.remove("active");
-    // add a bg to selected btn
-    btn.target.classList.add("active");
-    // show imgs
-    graphicSec.style.display = "none";
-    webSec.style.display = "block";
-    vectorSec.style.display = "none";
-    interior.style.display = "none";
-
-
+webBtn.addEventListener('click', (btn) => {
+  //remove bg from all btns
+  allBtn.classList.remove('active');
+  inter.classList.remove('active');
+  graphicBtn.classList.remove('active');
+  vectorBtn.classList.remove('active');
+  vectorBtn1.classList.remove('active');
+  // add a bg to selected btn
+  btn.target.classList.add('active');
+  // show imgs
+  graphicSec.style.display = 'none';
+  webSec.style.display = 'block';
+  vectorSec.style.display = 'none';
+  interior.style.display = 'none';
 });
 
-
-// whats app 
+// whats app
 window.onscroll = () => {
   if (this.scrollY <= 220) {
-    document.getElementById("whatsApp").style.display = "none";
+    document.getElementById('whatsApp').style.display = 'none';
+  } else {
+    document.getElementById('whatsApp').style.display = 'block';
   }
-  else{
-    document.getElementById("whatsApp").style.display = "block";
-  
-  }
-}
+};
