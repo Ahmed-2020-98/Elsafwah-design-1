@@ -11,8 +11,8 @@ const xmark = document.querySelector('header .icon .xmark');
 
 const images = [
   'https://socialbuildingz.com/sites/default/files/styles/new_slideshow_style/public/stories/WhatsApp%20Image%202019-07-14%20at%2010.20.48%20PM%20%281%29.jpeg?itok=bCVZLG0r',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSQZtG6HWPSnPdkvmVfNadUqUTW2DHhjnK9A&usqp=CAU',
-  'https://www.dcsmasr.com/images/jf/360/%D9%85%D9%88%D9%82%D8%B9/%D9%81%D9%8A%D9%84%D8%A7%20%D9%85%D8%A7%D9%83%D8%B3%D9%8A%D9%85/%D8%AF%D9%8A_%D8%B3%D9%8A_%D8%A5%D8%B3_%D9%85%D8%B5%D8%B1_%D8%AA%D8%B4%D8%B7%D9%8A%D8%A8_%D8%AA%D8%B5%D9%85%D9%8A%D9%85_%D9%81%D9%8A%D9%84%D8%A7_%D9%85%D8%A7%D9%83%D8%B3%D9%8A%D9%85_4.webp',
+  '../images/heading/2.jpg',
+  '../images/heading/5.jpg',
 
 ];
 const heading = ['نحن نقدم لك ما تستحق', 'عيش الرفاهية الفندقية', 'تصميمات تجعل عيناك تتألق'];
