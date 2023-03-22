@@ -149,22 +149,23 @@ header .container .navbar ul li a {
   font-size: 18px;
   font-family: 'Noto Kufi Arabic', sans-serif;
 }
-header .container .navbar ul li a:hover::before {
+header .container .navbar ul li a:hover::before,
+header .container .navbar ul li a.inactive::before  {
   /* border-bottom: 3px solid var(--main-color); */
   content: '';
-  width: 30px;
+  width: 47px;
   height: 2px;
   position: absolute;
   bottom: 20px;
   background-color: var(--main-color-heading);
-  animation: links 0.2s ease-in-out;
+  animation: links 0.3s ease-in-out;
 }
 @keyframes links {
   0% {
     width: 0;
   }
   100% {
-    width: 30px;
+    width: 47px;
   }
 }
 
@@ -172,7 +173,7 @@ header .container .navbar ul li a:hover::before {
 .image-slider {
   min-height: calc(100vh - 70px);
   position: relative;
-  background-image: url(../images/heading/2.jpg);
+  background-image: url(../images/heading/200.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.3s;

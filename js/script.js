@@ -11,7 +11,7 @@ const xmark = document.querySelector('header .icon .xmark');
 
 const images = [
   'https://socialbuildingz.com/sites/default/files/styles/new_slideshow_style/public/stories/WhatsApp%20Image%202019-07-14%20at%2010.20.48%20PM%20%281%29.jpeg?itok=bCVZLG0r',
-  '../images/heading/2.jpg',
+  '../images/heading/200.jpg',
   '../images/heading/5.jpg',
 
 ];
